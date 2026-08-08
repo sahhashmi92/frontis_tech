@@ -1,0 +1,174 @@
+import type { Metadata } from "next";
+import CtaBand from "@/components/CtaBand";
+import PageHero from "@/components/PageHero";
+import Reveal from "@/components/Reveal";
+import SectionHeading from "@/components/SectionHeading";
+import { Section } from "@/components/blocks";
+import { Icon, type IconName } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Frontis Tech LLC is a full-service operations and technology partner with US-based leadership and global delivery across calling, back-office, staffing, marketing, and software.",
+};
+
+const values: { title: string; body: string }[] = [
+  {
+    title: "Transparency",
+    body: "No hidden costs, no opaque structures. You see what you pay for and who does the work.",
+  },
+  {
+    title: "Compliance",
+    body: "Regulatory standards are a baseline, not a feature. We build to them before a campaign ever launches.",
+  },
+  {
+    title: "Accountability",
+    body: "We report measurable results, not activity metrics. If a number matters to you, it’s on our dashboard.",
+  },
+  {
+    title: "Partnership",
+    body: "Long-term relationships over transactional vendor arrangements. We win when your numbers improve.",
+  },
+];
+
+const deliveryPoints: { icon: IconName; title: string; body: string }[] = [
+  {
+    icon: "mapPin",
+    title: "US-based client management",
+    body: "Your contract, account management, and escalation path are American, with clear communication in your time zone.",
+  },
+  {
+    icon: "globe",
+    title: "Global operations team",
+    body: "Day-to-day execution runs on a global delivery team, keeping work moving around the clock at a cost structure that makes sense.",
+  },
+  {
+    icon: "clipboardCheck",
+    title: "Quality-controlled by design",
+    body: "QA, monitoring, and reporting sit between you and the work, so scale never comes at the cost of standards.",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="About us"
+        title="More than a vendor. An operations partner."
+        lede="Frontis Tech exists for a simple reason: managing five specialist vendors is a full-time job nobody wants."
+      />
+
+      {/* Our story */}
+      <Section aria-labelledby="our-story">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our story"
+              title={<span id="our-story">Why Frontis Tech exists</span>}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="space-y-5 text-lg leading-relaxed text-ink">
+              <p>
+                Growth-focused businesses rarely have one problem. The company that
+                needs more qualified sales conversations usually also needs help with
+                the CRM those conversations land in, the staff to follow them up, the
+                marketing that feeds them, and the software that ties it all together.
+              </p>
+              <p>
+                The traditional answer is five vendors, five contracts, and five
+                versions of the truth, with the client stuck in the middle doing the
+                coordination. Frontis Tech was founded to replace that arrangement
+                with a single operations partner that scales across calling,
+                back-office, staffing, marketing, and software.
+              </p>
+              <p>
+                One partner, one point of accountability, and connections that
+                convert.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* How we work */}
+      <Section tint aria-labelledby="how-we-work">
+        <Reveal>
+          <SectionHeading
+            eyebrow="How we work"
+            title={<span id="how-we-work">A delivery model built on purpose</span>}
+            lede="This model isn’t a compromise; it’s the advantage. Cost-efficient, always available, and quality-controlled at every step."
+          />
+        </Reveal>
+        <ul className="mt-10 grid gap-5 lg:grid-cols-3">
+          {deliveryPoints.map((p, i) => (
+            <Reveal as="li" key={p.title} delay={i * 70}>
+              <div className="h-full rounded-2xl border border-line bg-white p-6">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-50 text-navy">
+                  <Icon name={p.icon} className="h-5.5 w-5.5" />
+                </span>
+                <h3 className="mt-4 leading-snug font-semibold text-navy">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.body}</p>
+              </div>
+            </Reveal>
+          ))}
+        </ul>
+      </Section>
+
+      {/* Leadership */}
+      <Section aria-labelledby="leadership">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Leadership"
+              title={<span id="leadership">Founder-led, operator-minded</span>}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="rounded-2xl border border-line bg-surface p-7 sm:p-9">
+              <p className="text-lg leading-relaxed text-ink">
+                Frontis Tech is led by its founding Managing Director, whose
+                background spans information technology and business operations,
+                built on an engineering foundation. As a founder-operator, he has
+                built and run the kind of delivery teams Frontis Tech now provides to
+                its clients, which means the company is run by someone who has done
+                the work, not just sold it.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* Values */}
+      <Section tint aria-labelledby="values">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Our values"
+            title={<span id="values">The principles we operate by</span>}
+          />
+        </Reveal>
+        <ol className="mt-10 grid gap-x-12 gap-y-10 sm:grid-cols-2">
+          {values.map((v, i) => (
+            <Reveal as="li" key={v.title} delay={i * 70}>
+              <div className="border-t-2 border-navy pt-5">
+                <span className="text-sm font-semibold tracking-wide text-orange-600">
+                  0{i + 1}
+                </span>
+                <h3 className="mt-2 text-xl font-semibold text-navy">{v.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted">{v.body}</p>
+              </div>
+            </Reveal>
+          ))}
+        </ol>
+      </Section>
+
+      <CtaBand
+        heading="See how we work, or just reach out"
+        copy="Browse the five service lines, or skip straight to a conversation about what you need."
+        ctaLabel="Talk to Us"
+        secondaryLabel="Our Services"
+        secondaryHref="/services"
+      />
+    </>
+  );
+}
