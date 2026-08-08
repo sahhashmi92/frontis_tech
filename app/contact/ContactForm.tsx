@@ -31,12 +31,16 @@ export default function ContactForm() {
 
     setStatus("submitting");
     try {
-      const res = await fetch(site.formEndpoint, {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: data,
-      });
+      // URL-encoded keeps this a CORS "simple request", which the Google
+      // Apps Script endpoint requires (it cannot answer preflights).
+      const body = new URLSearchParams();
+      data.forEach((value, key) => body.append(key, String(value)));
+      const res = await fetch(site.formEndpoint, { method: "POST", body });
       if (!res.ok) throw new Error(`Form endpoint returned ${res.status}`);
+      const payload = await res.json().catch(() => null);
+      if (payload && payload.ok === false) {
+        throw new Error(payload.error || "Form endpoint reported a failure");
+      }
       setStatus("success");
       form.reset();
     } catch {
