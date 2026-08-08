@@ -59,63 +59,6 @@ export default function AboutPage() {
         lede="Frontis Tech exists for a simple reason: managing five specialist vendors is a full-time job nobody wants."
       />
 
-      {/* Our story */}
-      <Section aria-labelledby="our-story">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Our story"
-              title={<span id="our-story">Why Frontis Tech exists</span>}
-            />
-          </Reveal>
-          <Reveal delay={100}>
-            <div className="space-y-5 text-lg leading-relaxed text-ink">
-              <p>
-                Growth-focused businesses rarely have one problem. The company that
-                needs more qualified sales conversations usually also needs help with
-                the CRM those conversations land in, the staff to follow them up, the
-                marketing that feeds them, and the software that ties it all together.
-              </p>
-              <p>
-                The traditional answer is five vendors, five contracts, and five
-                versions of the truth, with the client stuck in the middle doing the
-                coordination. Frontis Tech was founded to replace that arrangement
-                with a single operations partner that scales across calling,
-                back-office, staffing, marketing, and software.
-              </p>
-              <p>
-                One partner, one point of accountability, and connections that
-                convert.
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </Section>
-
-      {/* How we work */}
-      <Section tint aria-labelledby="how-we-work">
-        <Reveal>
-          <SectionHeading
-            eyebrow="How we work"
-            title={<span id="how-we-work">A delivery model built on purpose</span>}
-            lede="This model isn’t a compromise; it’s the advantage. Cost-efficient, always available, and quality-controlled at every step."
-          />
-        </Reveal>
-        <ul className="mt-10 grid gap-5 lg:grid-cols-3">
-          {deliveryPoints.map((p, i) => (
-            <Reveal as="li" key={p.title} delay={i * 70}>
-              <div className="h-full rounded-2xl border border-line bg-white p-6">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-50 text-navy">
-                  <Icon name={p.icon} className="h-5.5 w-5.5" />
-                </span>
-                <h3 className="mt-4 leading-snug font-semibold text-navy">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{p.body}</p>
-              </div>
-            </Reveal>
-          ))}
-        </ul>
-      </Section>
-
       {/* Leadership */}
       <Section aria-labelledby="leadership">
         <Reveal>
@@ -167,6 +110,63 @@ export default function AboutPage() {
             </div>
           </Reveal>
         </div>
+      </Section>
+
+      {/* Our story */}
+      <Section tint aria-labelledby="our-story">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our story"
+              title={<span id="our-story">Why Frontis Tech exists</span>}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="space-y-5 text-lg leading-relaxed text-ink">
+              <p>
+                Growth-focused businesses rarely have one problem. The company that
+                needs more qualified sales conversations usually also needs help with
+                the CRM those conversations land in, the staff to follow them up, the
+                marketing that feeds them, and the software that ties it all together.
+              </p>
+              <p>
+                The traditional answer is five vendors, five contracts, and five
+                versions of the truth, with the client stuck in the middle doing the
+                coordination. Frontis Tech was founded to replace that arrangement
+                with a single operations partner that scales across calling,
+                back-office, staffing, marketing, and software.
+              </p>
+              <p>
+                One partner, one point of accountability, and connections that
+                convert.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* How we work */}
+      <Section aria-labelledby="how-we-work">
+        <Reveal>
+          <SectionHeading
+            eyebrow="How we work"
+            title={<span id="how-we-work">A delivery model built on purpose</span>}
+            lede="This model isn’t a compromise; it’s the advantage. Cost-efficient, always available, and quality-controlled at every step."
+          />
+        </Reveal>
+        <ul className="mt-10 grid gap-5 lg:grid-cols-3">
+          {deliveryPoints.map((p, i) => (
+            <Reveal as="li" key={p.title} delay={i * 70}>
+              <div className="h-full rounded-2xl border border-line bg-white p-6">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-50 text-navy">
+                  <Icon name={p.icon} className="h-5.5 w-5.5" />
+                </span>
+                <h3 className="mt-4 leading-snug font-semibold text-navy">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.body}</p>
+              </div>
+            </Reveal>
+          ))}
+        </ul>
       </Section>
 
       {/* Values */}
