@@ -25,15 +25,19 @@ npx eslint app components lib   # lint
 | `public/brand/` | Web-optimized logo exports (trimmed from `/Images` originals) |
 | `scripts/process-assets.mjs` | Regenerates `public/brand` + favicons from the original logo files |
 
-## Connect the contact form (one step)
+## Contact form backend (already connected)
 
-The form posts to a Formspree-compatible endpoint. Until connected, it shows a
-graceful "email us directly" message instead of failing silently.
+Submissions post to a Google Apps Script web app bound to the
+**"Frontis Tech Website Leads"** Google Sheet. Each submission appends a row to
+the "Leads" tab and sends an email alert to the recipient configured as
+`NOTIFY_EMAIL` in the script. The script source is versioned at
+`scripts/google-apps-script-form.gs`; the live copy is managed from the sheet
+via Extensions > Apps Script (project "Frontis Tech Form Backend").
 
-1. Create a form at [formspree.io](https://formspree.io) (point it at contact@frontistech.com — enable the auto-reply email in Formspree settings, per the brief).
-2. In Vercel → Project → Settings → Environment Variables add:
-   `NEXT_PUBLIC_FORM_ENDPOINT = https://formspree.io/f/<your-form-id>`
-3. Redeploy.
+- Change the alert recipient: edit `NOTIFY_EMAIL` in the Apps Script and
+  Deploy > Manage deployments > edit > New version.
+- Switch backends (e.g. Formspree): set `NEXT_PUBLIC_FORM_ENDPOINT` in Vercel;
+  it overrides the built-in default in `lib/site.ts`.
 
 ## Deployment (per brief)
 

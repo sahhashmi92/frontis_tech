@@ -5,12 +5,14 @@ export const site = {
   url: "https://frontistech.com",
   email: "contact@frontistech.com",
   /**
-   * Contact form backend (Formspree or compatible endpoint that accepts a
-   * JSON POST). Create a form at https://formspree.io, then set
-   * NEXT_PUBLIC_FORM_ENDPOINT="https://formspree.io/f/<your-form-id>"
-   * in Vercel → Project → Settings → Environment Variables.
+   * Contact form backend: Google Apps Script web app bound to the
+   * "Frontis Tech Website Leads" sheet. Each submission appends a row and
+   * emails an alert (see scripts/google-apps-script-form.gs). Override with
+   * NEXT_PUBLIC_FORM_ENDPOINT to point at a different backend.
    */
-  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
+  formEndpoint:
+    process.env.NEXT_PUBLIC_FORM_ENDPOINT ??
+    "https://script.google.com/macros/s/AKfycbyIZAQbo6IpMTxvfL_V_Xwc1JkTE-gCmV2mfOFvHDO7PSLKSk40hzar5QCZbhb-wVDZ/exec",
 };
 
 export type ServiceInfo = {
