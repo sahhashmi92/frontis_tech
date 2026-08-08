@@ -124,6 +124,6 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 ## 5. Open items for the client
 
 1. **Florida vs Texas**: brief header says Florida, footer spec says Texas. Site follows the explicit footer instruction ("Registered in Texas, USA") — confirm.
-2. Phone number, mailing address, Managing Director name/photo.
+2. Phone number and mailing address (Managing Director name and photo added 2026-08-08).
 3. Formspree form ID + auto-reply.
 4. Deploy to Vercel, DNS via Cloudflare, Search Console verification + sitemap submission on launch day.

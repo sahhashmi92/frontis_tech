@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
@@ -117,23 +118,52 @@ export default function AboutPage() {
 
       {/* Leadership */}
       <Section aria-labelledby="leadership">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Leadership"
+            title={<span id="leadership">Founder-led, operator-minded</span>}
+          />
+        </Reveal>
+        <div className="mt-10 grid items-center gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
           <Reveal>
-            <SectionHeading
-              eyebrow="Leadership"
-              title={<span id="leadership">Founder-led, operator-minded</span>}
-            />
+            <div className="relative mx-auto max-w-sm lg:max-w-none">
+              <div
+                className="absolute -top-4 -left-4 hidden h-24 w-24 rounded-full border-[3px] border-orange/60 sm:block"
+                aria-hidden="true"
+              />
+              <Image
+                src="/team/aftab-hussain.jpg"
+                alt="Aftab Hussain, Founder and Managing Director of Frontis Tech"
+                width={800}
+                height={1000}
+                className="relative rounded-3xl object-cover shadow-xl shadow-navy-900/10"
+              />
+            </div>
           </Reveal>
           <Reveal delay={100}>
-            <div className="rounded-2xl border border-line bg-surface p-7 sm:p-9">
-              <p className="text-lg leading-relaxed text-ink">
-                Frontis Tech is led by its founding Managing Director, whose
-                background spans information technology and business operations,
-                built on an engineering foundation. As a founder-operator, he has
-                built and run the kind of delivery teams Frontis Tech now provides to
-                its clients, which means the company is run by someone who has done
-                the work, not just sold it.
+            <div>
+              <h3 className="text-2xl font-semibold tracking-tight text-navy">
+                Aftab Hussain
+              </h3>
+              <p className="mt-1 text-sm font-semibold tracking-[0.14em] text-orange-600 uppercase">
+                Founder &amp; Managing Director
               </p>
+              <div className="mt-5 space-y-4 text-lg leading-relaxed text-ink">
+                <p>
+                  Aftab leads Frontis Tech with a simple operating philosophy:
+                  understand what a business needs, be straight about whether we
+                  can help, and then make it happen. His background spans
+                  information technology and business operations, built on an
+                  engineering foundation.
+                </p>
+                <p>
+                  As a founder-operator, he has built and run the kind of delivery
+                  teams Frontis Tech now provides to its clients, which means the
+                  company is run by someone who has done the work, not just sold
+                  it. He is a familiar face at the industry&rsquo;s key events,
+                  including Medicarians, LeadsCon, and Collision.
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
