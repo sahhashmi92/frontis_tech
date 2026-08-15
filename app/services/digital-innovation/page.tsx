@@ -5,13 +5,14 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceSchema from "@/components/ServiceSchema";
+import RelatedServices from "@/components/RelatedServices";
 import { AudienceList, ProcessSteps, Section } from "@/components/blocks";
 import { Icon, type IconName } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Digital Innovation & Software Development",
   description:
-    "Custom software, web and mobile apps, process automation, and AI integrations from a structured technology build partner.",
+    "Custom software built for the way your business runs: internal tools, workflow systems, CRM integrations, and API development from a structured build partner.",
 };
 
 const capabilities: {
@@ -21,41 +22,42 @@ const capabilities: {
 }[] = [
   {
     icon: "settings",
-    title: "Custom Software Development",
+    title: "Internal Business Tools",
     items: [
-      "Internal business tools",
-      "Process automation & workflow systems",
-      "Custom CRM integrations",
-      "API development & third-party integrations",
+      "Operations dashboards and admin panels",
+      "Custom portals for staff, partners, or customers",
+      "Reporting and analytics tools built on your data",
+      "Replacements for spreadsheets that have outgrown their job",
     ],
   },
   {
-    icon: "monitor",
-    title: "Web Development",
+    icon: "workflow",
+    title: "Workflow & Process Systems",
     items: [
-      "Business websites & web applications",
-      "E-commerce builds",
-      "CMS implementation",
-      "Performance optimization",
+      "Systems that model your actual business process",
+      "Approval flows, task routing, and status tracking",
+      "Document generation and management",
+      "Notifications and hand-offs between teams",
     ],
   },
   {
-    icon: "smartphone",
-    title: "Mobile App Development",
+    icon: "database",
+    title: "CRM & Systems Integration",
     items: [
-      "iOS and Android development",
-      "Cross-platform apps",
-      "MVP builds for early-stage products",
+      "Custom CRM integrations and extensions",
+      "Syncing data between the tools you already use",
+      "Migration off legacy systems",
+      "Single source of truth for customer and campaign data",
     ],
   },
   {
-    icon: "sparkles",
-    title: "AI & Automation",
+    icon: "layers",
+    title: "API Development",
     items: [
-      "AI integration into existing systems",
-      "Chatbots & conversational AI",
-      "Process automation & data pipelines",
-      "Reporting & analytics tools",
+      "APIs that expose your data to partners and apps",
+      "Third-party API integrations",
+      "Payment, messaging, and telephony integrations",
+      "Documentation and versioning built in",
     ],
   },
 ];
@@ -73,21 +75,21 @@ export default function DigitalInnovationPage() {
     <>
       <ServiceSchema
         name="Digital Innovation & Software Development"
-        description="Custom software, web and mobile apps, automation, AI integrations, and business tools."
+        description="Custom software development: internal business tools, workflow systems, CRM integrations, and API development."
         slug="digital-innovation"
       />
 
       <PageHero
         eyebrow="Digital Innovation & Software Development"
         title="Ideas become working software"
-        lede="The technology build arm of Frontis Tech: custom systems, web and mobile applications, automation, and AI integrations, delivered through a structured process rather than freelance guesswork."
+        lede="The technology build arm of Frontis Tech: custom systems built around the way your business actually operates, delivered through a structured process rather than freelance guesswork."
       />
 
       <Section aria-labelledby="capabilities">
         <Reveal>
           <SectionHeading
             eyebrow="What we build"
-            title={<span id="capabilities">Four build capabilities, one delivery standard</span>}
+            title={<span id="capabilities">Software shaped to your operation, not the other way round</span>}
           />
         </Reveal>
         <ul className="mt-10 grid gap-5 lg:grid-cols-2">
@@ -129,7 +131,9 @@ export default function DigitalInnovationPage() {
         </div>
       </Section>
 
-      <Section aria-labelledby="who-for">
+      <RelatedServices current="digital-innovation" />
+
+      <Section tint aria-labelledby="who-for">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
           <Reveal>
             <SectionHeading
@@ -153,8 +157,8 @@ export default function DigitalInnovationPage() {
             <AudienceList
               items={[
                 "Businesses that need a technology build partner rather than a single freelancer",
-                "Companies that want to automate internal processes",
-                "Startups that need an MVP built properly the first time",
+                "Companies whose operations have outgrown spreadsheets and off-the-shelf tools",
+                "Teams that need their CRM, telephony, and back-office systems to talk to each other",
                 "Established businesses adding digital capability to how they operate",
               ]}
             />
@@ -164,7 +168,7 @@ export default function DigitalInnovationPage() {
 
       <CtaBand
         heading="Tell us what you’re building"
-        copy="Describe the tool, the app, or the process you want automated, and we’ll come back with an honest scope and a clear plan."
+        copy="Describe the tool or the process you want systemized, and we’ll come back with an honest scope and a clear plan."
         ctaLabel="Talk to Us"
       />
     </>

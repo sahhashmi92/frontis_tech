@@ -9,7 +9,7 @@ import { services } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Five service lines, one partner: customer acquisition, back-office support, talent solutions, performance marketing, and software development for US businesses.",
+    "Eight service lines, one partner: customer acquisition, back-office support, talent, marketing, software development, AI and automation, application development, and cloud for US businesses.",
 };
 
 export default function ServicesPage() {

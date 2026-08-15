@@ -1,6 +1,6 @@
 import { site } from "@/lib/site";
 
-/** schema.org Service markup for the five service pages. */
+/** schema.org Service markup for the service pages. */
 export default function ServiceSchema({
   name,
   description,

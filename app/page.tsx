@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     absolute: "Frontis Tech | Operations & Technology Partner | Connections That Convert",
   },
   description:
-    "Customer acquisition, back-office support, talent solutions, performance marketing, and software development: five service lines, one accountable US partner.",
+    "Customer acquisition, back-office support, talent, marketing, software, AI, apps, and cloud: eight service lines, one accountable US partner.",
 };
 
 const whyItems: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "network",
     title: "A full-service partner, not a single vendor",
-    body: "Five service lines under one roof mean fewer hand-offs, fewer contracts, and one team accountable for outcomes.",
+    body: "Eight service lines under one roof mean fewer hand-offs, fewer contracts, and one team accountable for outcomes.",
   },
   {
     icon: "globe",
@@ -47,11 +47,14 @@ const heroChips: {
   y: number;
   delay: string;
 }[] = [
-  { icon: "acquisition", label: "Customer Acquisition", x: 16, y: 44, delay: "0s" },
-  { icon: "backoffice", label: "Back-Office Support", x: 332, y: 76, delay: "1.1s" },
-  { icon: "talent", label: "Talent Solutions", x: 0, y: 236, delay: "2.2s" },
-  { icon: "marketing", label: "Performance Marketing", x: 348, y: 268, delay: "0.6s" },
-  { icon: "software", label: "Digital Innovation", x: 152, y: 428, delay: "1.7s" },
+  { icon: "acquisition", label: "Customer Acquisition", x: 30, y: 30, delay: "0s" },
+  { icon: "backoffice", label: "Back-Office Support", x: 340, y: 40, delay: "1.1s" },
+  { icon: "talent", label: "Talent Solutions", x: 0, y: 160, delay: "2.2s" },
+  { icon: "marketing", label: "Performance Marketing", x: 372, y: 170, delay: "0.6s" },
+  { icon: "software", label: "Software Development", x: 6, y: 300, delay: "1.7s" },
+  { icon: "ai", label: "AI & Automation", x: 396, y: 306, delay: "2.6s" },
+  { icon: "apps", label: "Application Development", x: 44, y: 442, delay: "0.9s" },
+  { icon: "cloud", label: "Cloud & Infrastructure", x: 330, y: 452, delay: "1.9s" },
 ];
 
 function HeroGraphic() {
@@ -66,17 +69,20 @@ function HeroGraphic() {
         fill="none"
       >
         <path
-          d="M118 88 C 190 130, 220 180, 268 224 M436 120 C 380 160, 340 190, 300 226 M100 264 C 160 264, 200 258, 236 254 M444 296 C 390 286, 350 278, 324 268 M244 432 C 258 390, 266 340, 274 296"
+          d="M130 72 C 190 110, 230 160, 262 214 M430 84 C 380 120, 340 160, 302 216 M110 184 C 160 200, 200 220, 232 240 M456 194 C 410 210, 370 228, 330 244 M116 322 C 160 300, 200 280, 236 268 M470 328 C 420 306, 380 288, 330 272 M160 456 C 200 400, 240 350, 268 300 M420 470 C 380 410, 340 350, 300 302"
           stroke="var(--color-navy-200)"
           strokeWidth="1.6"
           strokeDasharray="1 7"
           strokeLinecap="round"
         />
-        <circle cx="268" cy="224" r="3.5" fill="var(--color-orange)" />
-        <circle cx="300" cy="226" r="3.5" fill="var(--color-orange)" />
-        <circle cx="236" cy="254" r="3.5" fill="var(--color-orange)" />
-        <circle cx="324" cy="268" r="3.5" fill="var(--color-orange)" />
-        <circle cx="274" cy="296" r="3.5" fill="var(--color-orange)" />
+        <circle cx="262" cy="214" r="3.5" fill="var(--color-orange)" />
+        <circle cx="302" cy="216" r="3.5" fill="var(--color-orange)" />
+        <circle cx="232" cy="240" r="3.5" fill="var(--color-orange)" />
+        <circle cx="330" cy="244" r="3.5" fill="var(--color-orange)" />
+        <circle cx="236" cy="268" r="3.5" fill="var(--color-orange)" />
+        <circle cx="330" cy="272" r="3.5" fill="var(--color-orange)" />
+        <circle cx="268" cy="300" r="3.5" fill="var(--color-orange)" />
+        <circle cx="300" cy="302" r="3.5" fill="var(--color-orange)" />
       </svg>
 
       {/* Center brand tile */}
@@ -145,8 +151,8 @@ export default function HomePage() {
               The operations and technology partner behind growing businesses
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-              Customer acquisition, back-office support, talent, marketing, and
-              software. Five service lines, one accountable team.
+              Customer acquisition, back-office support, talent, marketing,
+              software, AI, and cloud. Eight service lines, one accountable team.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Button href="/contact" size="lg" withArrow>
@@ -169,11 +175,11 @@ export default function HomePage() {
         <Reveal>
           <SectionHeading
             eyebrow="What we do"
-            title={<span id="services-heading">Five service lines. One partner.</span>}
+            title={<span id="services-heading">Eight service lines. One partner.</span>}
             lede="Start with the service you need today and add the rest as you grow."
           />
         </Reveal>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
             <Reveal as="li" key={s.slug} delay={i * 70}>
               <Link

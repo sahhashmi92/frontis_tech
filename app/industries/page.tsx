@@ -82,7 +82,9 @@ const blocks: IndustryBlock[] = [
     name: "General SMB & Mid-Market",
     pain: "Growing businesses that need operational support and technology capability without building large in-house teams.",
     services: [
-      { label: "All five service lines, as a full-service partnership", href: "/services" },
+      { label: "All eight service lines, as a full-service partnership", href: "/services" },
+      { label: "AI & Automation for repetitive operational work", href: "/services/ai-automation" },
+      { label: "Cloud & Infrastructure for teams without in-house engineers", href: "/services/cloud-infrastructure" },
     ],
   },
 ];

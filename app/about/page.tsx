@@ -56,7 +56,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="More than a vendor. An operations partner."
-        lede="Frontis Tech exists for a simple reason: managing five specialist vendors is a full-time job nobody wants."
+        lede="Frontis Tech exists for a simple reason: managing a different specialist vendor for every need is a full-time job nobody wants."
       />
 
       {/* Leadership */}
@@ -130,11 +130,12 @@ export default function AboutPage() {
                 marketing that feeds them, and the software that ties it all together.
               </p>
               <p>
-                The traditional answer is five vendors, five contracts, and five
-                versions of the truth, with the client stuck in the middle doing the
+                The traditional answer is a different vendor for each need, a
+                contract for each vendor, and a different version of the truth from
+                every one of them, with the client stuck in the middle doing the
                 coordination. Frontis Tech was founded to replace that arrangement
                 with a single operations partner that scales across calling,
-                back-office, staffing, marketing, and software.
+                back-office, staffing, marketing, software, AI, and cloud.
               </p>
               <p>
                 One partner, one point of accountability, and connections that
@@ -194,7 +195,7 @@ export default function AboutPage() {
 
       <CtaBand
         heading="See how we work, or just reach out"
-        copy="Browse the five service lines, or skip straight to a conversation about what you need."
+        copy="Browse the eight service lines, or skip straight to a conversation about what you need."
         ctaLabel="Talk to Us"
         secondaryLabel="Our Services"
         secondaryHref="/services"

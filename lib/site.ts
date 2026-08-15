@@ -25,7 +25,7 @@ export type ServiceInfo = {
   blurb: string;
   /** Two or three sentences for the services hub */
   summary: string;
-  icon: "acquisition" | "backoffice" | "talent" | "marketing" | "software";
+  icon: "acquisition" | "backoffice" | "talent" | "marketing" | "software" | "ai" | "apps" | "cloud";
 };
 
 export const services: ServiceInfo[] = [
@@ -68,11 +68,38 @@ export const services: ServiceInfo[] = [
   {
     slug: "digital-innovation",
     name: "Digital Innovation & Software Development",
-    short: "Digital Innovation",
-    blurb: "Custom software, web and mobile apps, automation, and AI integrations.",
+    short: "Software Development",
+    blurb: "Custom internal tools, integrations, and business systems, built to spec.",
     summary:
-      "Custom software, web and mobile applications, process automation, and AI integrations. A structured build partner for the tools your business runs on, from internal systems to customer-facing products.",
+      "Custom software for the way your business actually runs: internal tools, workflow systems, CRM integrations, and API development. A structured build partner rather than a freelance gamble.",
     icon: "software",
+  },
+  {
+    slug: "ai-automation",
+    name: "AI & Automation",
+    short: "AI & Automation",
+    blurb: "AI agents, chatbots, and workflow automation that remove manual work.",
+    summary:
+      "AI integrated into the systems you already use: conversational AI for sales and support, AI agents that handle repetitive work, process automation, and data pipelines. Practical AI with measurable output, not experiments.",
+    icon: "ai",
+  },
+  {
+    slug: "application-development",
+    name: "Application Development",
+    short: "Application Development",
+    blurb: "Web, mobile, and e-commerce applications from MVP to full product.",
+    summary:
+      "Web applications, iOS and Android apps, cross-platform builds, and e-commerce platforms. From a first MVP to a mature product, delivered through a structured process with ongoing support after launch.",
+    icon: "apps",
+  },
+  {
+    slug: "cloud-infrastructure",
+    name: "Cloud Management & Migration",
+    short: "Cloud & Infrastructure",
+    blurb: "Cloud migration, managed operations, and cost control on AWS, Azure, or Google Cloud.",
+    summary:
+      "Move to the cloud, or get more from the cloud you already have. Migration planning and execution, architecture, managed operations and monitoring, cost optimization, backups, and DevOps, on AWS, Azure, or Google Cloud.",
+    icon: "cloud",
   },
 ];
 

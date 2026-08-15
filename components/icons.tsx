@@ -68,6 +68,29 @@ export const icons = {
     </Svg>
   ),
 
+  ai: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <rect x="4.5" y="7" width="15" height="12" rx="2.5" />
+      <path d="M12 3v4M8.5 3.5h7" />
+      <circle cx="9.2" cy="12.5" r="1" fill="currentColor" stroke="none" />
+      <circle cx="14.8" cy="12.5" r="1" fill="currentColor" stroke="none" />
+      <path d="M9.5 16h5M2.5 12v3M21.5 12v3" />
+    </Svg>
+  ),
+  apps: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <rect x="2.8" y="4.5" width="13" height="15" rx="1.8" />
+      <rect x="15" y="8.5" width="6.2" height="11" rx="1.6" />
+      <path d="M2.8 8.5h13M17.4 17.2h1.4" />
+    </Svg>
+  ),
+  cloud: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.2 4.7 4.7 0 0 0 7 18.5Z" />
+      <path d="M12 12.5v6M9.5 15l2.5-2.5 2.5 2.5" />
+    </Svg>
+  ),
+
   /* ---- Industries ---- */
   health: (p: SVGProps<SVGSVGElement>) => (
     <Svg {...p}>
@@ -290,6 +313,67 @@ export const icons = {
     <Svg {...p}>
       <path d="M12 2.8v18.4" />
       <path d="M16.8 6.5H9.9a3 3 0 1 0 0 6h4.2a3 3 0 1 1 0 6H6.8" />
+    </Svg>
+  ),
+  server: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <rect x="3.5" y="3.5" width="17" height="7" rx="1.8" />
+      <rect x="3.5" y="13.5" width="17" height="7" rx="1.8" />
+      <path d="M7 7h.01M7 17h.01" strokeWidth={2.4} />
+    </Svg>
+  ),
+  activity: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="M2.5 12h4l2.5-6.5 5 13 2.5-6.5h5" />
+    </Svg>
+  ),
+  chat: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="M20.5 11.5a7.5 7.5 0 0 1-11 6.6L4 19.5l1.5-4.6A7.5 7.5 0 1 1 20.5 11.5Z" />
+      <path d="M9 11.5h.01M12 11.5h.01M15 11.5h.01" strokeWidth={2.4} />
+    </Svg>
+  ),
+  workflow: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <rect x="3" y="3.5" width="6" height="6" rx="1.4" />
+      <rect x="15" y="14.5" width="6" height="6" rx="1.4" />
+      <path d="M9 6.5h5.5a2 2 0 0 1 2 2v3M15 17.5H9.5a2 2 0 0 1-2-2v-3" />
+      <path d="m14.6 9.6 1.9 1.9 1.9-1.9M9.4 14.4l-1.9-1.9-1.9 1.9" />
+    </Svg>
+  ),
+  layers: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="m12 2.8 9.2 4.4L12 11.6 2.8 7.2 12 2.8Z" />
+      <path d="m2.8 12 9.2 4.4 9.2-4.4" />
+      <path d="m2.8 16.8 9.2 4.4 9.2-4.4" />
+    </Svg>
+  ),
+  rocket: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="M12 15.5c-2.5-2.5-2.5-6.5 0-11 2.5 4.5 2.5 8.5 0 11Z" />
+      <path d="M12 15.5 8.5 19l-.5-4.5M12 15.5l3.5 3.5.5-4.5" />
+      <path d="M12 21.2v-3" />
+      <circle cx="12" cy="9.5" r="1" fill="currentColor" stroke="none" />
+    </Svg>
+  ),
+  cart: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <circle cx="9.2" cy="19.8" r="1.4" />
+      <circle cx="17.6" cy="19.8" r="1.4" />
+      <path d="M2.8 3.5h2.6l2.5 12.2a1.7 1.7 0 0 0 1.7 1.4h7.6a1.7 1.7 0 0 0 1.7-1.3l1.6-7.3H6.2" />
+    </Svg>
+  ),
+  copy: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <rect x="8.5" y="8.5" width="12" height="12" rx="1.8" />
+      <path d="M5 15.5H4.3A1.8 1.8 0 0 1 2.5 13.7V4.3A1.8 1.8 0 0 1 4.3 2.5h9.4a1.8 1.8 0 0 1 1.8 1.8V5" />
+    </Svg>
+  ),
+  gauge: (p: SVGProps<SVGSVGElement>) => (
+    <Svg {...p}>
+      <path d="M4.2 18a9 9 0 1 1 15.6 0" />
+      <path d="m12 14 3.8-5.2" />
+      <circle cx="12" cy="14" r="1.4" />
     </Svg>
   ),
   mapPin: (p: SVGProps<SVGSVGElement>) => (

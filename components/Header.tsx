@@ -125,8 +125,8 @@ export default function Header() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute left-1/2 mt-3 w-[26rem] -translate-x-1/2 rounded-2xl border border-line bg-white p-2 shadow-xl shadow-navy-900/8">
-                <ul>
+              <div className="absolute left-1/2 mt-3 w-[46rem] -translate-x-1/2 rounded-2xl border border-line bg-white p-2 shadow-xl shadow-navy-900/8">
+                <ul className="grid grid-cols-2 gap-x-1">
                   {services.map((s) => (
                     <li key={s.slug}>
                       <Link
