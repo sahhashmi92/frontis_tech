@@ -78,11 +78,25 @@ export default function Footer() {
             <h2 className="text-sm font-semibold tracking-wide text-navy">Get in touch</h2>
             <ul className="mt-4 space-y-2.5 text-sm text-muted">
               <li>
+                <span className="block text-[0.8125rem] font-semibold text-navy">
+                  Partnerships
+                </span>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={`mailto:${site.emailPartnership}`}
                   className="font-medium text-navy-500 transition-colors hover:text-navy"
                 >
-                  {site.email}
+                  {site.emailPartnership}
+                </a>
+              </li>
+              <li>
+                <span className="block text-[0.8125rem] font-semibold text-navy">
+                  General inquiries
+                </span>
+                <a
+                  href={`mailto:${site.emailGeneral}`}
+                  className="font-medium text-navy-500 transition-colors hover:text-navy"
+                >
+                  {site.emailGeneral}
                 </a>
               </li>
               <li>We respond to all inquiries within one US business day.</li>
@@ -94,7 +108,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <p>{site.name} · Registered in Texas, USA</p>
+          <p>{site.name} · Registered in Florida, USA</p>
         </div>
       </div>
     </footer>

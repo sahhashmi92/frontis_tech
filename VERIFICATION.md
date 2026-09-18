@@ -43,7 +43,7 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 ### About
 - ✅ Our Story: 3 short paragraphs, problem→solution, not a memoir
 - ✅ How We Work: US client management + global operations framed as advantage, no apologies
-- 📋 Leadership: bio written per brief (IT + operations background, engineering foundation, founder-operator); **name/photo pending client**
+- ➖ Leadership section removed from About at client request
 - ✅ Values: Transparency, Compliance, Accountability, Partnership (numbered editorial list)
 - ✅ CTA: "See how we work, or just reach out"
 
@@ -93,9 +93,9 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 - ✅ Intro: "Tell us what you need" + one-business-day line, no long paragraphs
 - ✅ Form fields: Full Name, Company, Email, Phone (optional), Service dropdown (5 services + "Not sure / General inquiry"), Message
 - ✅ Response commitment below form
-- 📋 US phone number (Texas area code): pending client
+- 📋 US phone number (Florida area code): pending client
 - 📋 Mailing address: pending virtual office
-- ✅ Business email contact@frontistech.com shown
+- ✅ Business emails partnership@frontistech.com and info@frontistech.com shown
 
 ## 4. Technical & design notes
 
@@ -107,7 +107,7 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 | Images compressed / WebP | ✅ next/image serves WebP/AVIF automatically; sources pre-trimmed |
 | Lazy-load below the fold | ✅ next/image default; header logo is priority-loaded |
 | Consistent CTA block on every service page | ✅ one shared `CtaBand` component; only heading/label vary |
-| Footer: name, tagline, quick links, contact, legal line, copyright | ✅ "Frontis Tech LLC · Registered in Texas, USA" |
+| Footer: name, tagline, quick links, contact, legal line, copyright | ✅ "Frontis Tech LLC · Registered in Florida, USA" |
 | No stock-photo clichés (headsets, handshakes, globes) | ✅ no photography at all; geometric brand graphics + line icons |
 | Icons: line-art, Deep Blue, consistent weight | ✅ custom 24px set, single 1.8 stroke |
 | Unique meta title + description per page | ✅ verified on all 11 pages |
@@ -123,7 +123,7 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 
 ## 5. Open items for the client
 
-1. **Florida vs Texas**: brief header says Florida, footer spec says Texas. Site follows the explicit footer instruction ("Registered in Texas, USA") — confirm.
+1. **Florida vs Texas**: resolved — client confirmed Florida; footer reads "Registered in Florida, USA".
 2. Phone number and mailing address (Managing Director name and photo added 2026-08-08).
 3. Formspree form ID + auto-reply.
 4. Deploy to Vercel, DNS via Cloudflare, Search Console verification + sitemap submission on launch day.

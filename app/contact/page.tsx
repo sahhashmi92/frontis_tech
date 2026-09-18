@@ -30,14 +30,27 @@ export default function ContactPage() {
               <dl className="space-y-7">
                 <div>
                   <dt className="text-[0.8125rem] font-semibold tracking-[0.14em] text-navy-500 uppercase">
-                    Email us directly
+                    For partnerships
                   </dt>
                   <dd className="mt-2">
                     <a
-                      href={`mailto:${site.email}`}
+                      href={`mailto:${site.emailPartnership}`}
                       className="text-lg font-semibold break-all text-navy underline-offset-4 hover:underline"
                     >
-                      {site.email}
+                      {site.emailPartnership}
+                    </a>
+                  </dd>
+                </div>
+                <div className="border-t border-line pt-7">
+                  <dt className="text-[0.8125rem] font-semibold tracking-[0.14em] text-navy-500 uppercase">
+                    For general inquiries
+                  </dt>
+                  <dd className="mt-2">
+                    <a
+                      href={`mailto:${site.emailGeneral}`}
+                      className="text-lg font-semibold break-all text-navy underline-offset-4 hover:underline"
+                    >
+                      {site.emailGeneral}
                     </a>
                   </dd>
                 </div>

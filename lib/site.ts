@@ -3,7 +3,10 @@ export const site = {
   shortName: "Frontis Tech",
   tagline: "Connections That Convert",
   url: "https://frontistech.com",
-  email: "contact@frontistech.com",
+  /** Partnership and business-development inquiries */
+  emailPartnership: "partnership@frontistech.com",
+  /** General inquiries */
+  emailGeneral: "info@frontistech.com",
   /**
    * Contact form backend: Google Apps Script web app bound to the
    * "Frontis Tech Website Leads" sheet. Each submission appends a row and

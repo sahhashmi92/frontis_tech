@@ -127,7 +127,7 @@ export default function HomePage() {
             legalName: site.name,
             url: site.url,
             logo: `${site.url}/brand/logo-stacked.png`,
-            email: site.email,
+            email: site.emailGeneral,
             slogan: site.tagline,
             areaServed: "US",
           }),

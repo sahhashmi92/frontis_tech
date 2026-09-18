@@ -24,7 +24,7 @@ export default function ContactForm() {
     if (!site.formEndpoint) {
       setStatus("error");
       setErrorMsg(
-        `The contact form isn’t connected yet. Please email us directly at ${site.email}. We respond within one US business day.`,
+        `The contact form isn’t connected yet. Please email us directly at ${site.emailGeneral}. We respond within one US business day.`,
       );
       return;
     }
@@ -46,7 +46,7 @@ export default function ContactForm() {
     } catch {
       setStatus("error");
       setErrorMsg(
-        `Something went wrong sending your message. Please try again, or email us at ${site.email}.`,
+        `Something went wrong sending your message. Please try again, or email us at ${site.emailGeneral}.`,
       );
     }
   }
