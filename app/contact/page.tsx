@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Tell us what you need: customer acquisition, back-office support, talent, marketing, or software. We respond to all inquiries within one US business day.",
+    "Tell us what you need: customer acquisition, back-office support, talent, marketing, or software.",
 };
 
 export default function ContactPage() {
@@ -29,6 +29,19 @@ export default function ContactPage() {
             <aside className="rounded-2xl border border-line bg-surface p-7 sm:p-8">
               <dl className="space-y-7">
                 <div>
+                  <dt className="text-[0.8125rem] font-semibold tracking-[0.14em] text-navy-500 uppercase">
+                    Call us
+                  </dt>
+                  <dd className="mt-2">
+                    <a
+                      href={`tel:${site.phoneE164}`}
+                      className="text-lg font-semibold text-navy underline-offset-4 hover:underline"
+                    >
+                      {site.phone}
+                    </a>
+                  </dd>
+                </div>
+                <div className="border-t border-line pt-7">
                   <dt className="text-[0.8125rem] font-semibold tracking-[0.14em] text-navy-500 uppercase">
                     For partnerships
                   </dt>
@@ -56,11 +69,16 @@ export default function ContactPage() {
                 </div>
                 <div className="border-t border-line pt-7">
                   <dt className="text-[0.8125rem] font-semibold tracking-[0.14em] text-navy-500 uppercase">
-                    Response commitment
+                    Our office
                   </dt>
-                  <dd className="mt-2 leading-relaxed text-muted">
-                    Every inquiry gets a reply within one US business day, usually
-                    sooner.
+                  <dd className="mt-2">
+                    <address className="leading-relaxed text-muted not-italic">
+                      {site.address.lines.map((line) => (
+                        <span key={line} className="block">
+                          {line}
+                        </span>
+                      ))}
+                    </address>
                   </dd>
                 </div>
                 <div className="border-t border-line pt-7">

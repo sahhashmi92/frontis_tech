@@ -7,6 +7,18 @@ export const site = {
   emailPartnership: "partnership@frontistech.com",
   /** General inquiries */
   emailGeneral: "info@frontistech.com",
+  /** Display form and E.164 form (for tel: links and schema) */
+  phone: "(727) 590-2190",
+  phoneE164: "+17275902190",
+  /** Registered US office; `lines` is the display form, the rest feeds schema.org */
+  address: {
+    lines: ["7901 4th St N, STE 300", "St. Petersburg, FL 33702"],
+    street: "7901 4th St N, STE 300",
+    city: "St. Petersburg",
+    region: "FL",
+    postalCode: "33702",
+    country: "US",
+  },
   /**
    * Contact form backend: Google Apps Script web app bound to the
    * "Frontis Tech Website Leads" sheet. Each submission appends a row and

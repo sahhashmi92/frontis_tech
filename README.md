@@ -49,9 +49,6 @@ via Extensions > Apps Script (project "Frontis Tech Form Backend").
 
 ## Content placeholders awaiting real data
 
-- **Phone number** — brief says a US (Florida area code) number is coming; add it in `components/Footer.tsx` and `app/contact/page.tsx` when available.
-- **Mailing address** — add once the virtual office is established.
-- **ISO 27001 / SOC 2** — listed as "in progress" on the Compliance page. Update only when certified.
 - **Phase 2 pages** (Case Studies, Careers, Blog) — intentionally not built; add them when real content exists.
 
 ## SEO already in place

@@ -107,20 +107,6 @@ export default function CompliancePage() {
             </Reveal>
           ))}
         </ul>
-
-        <Reveal delay={150}>
-          <div className="mt-8 flex items-start gap-4 rounded-2xl border border-navy-200 bg-navy-50 p-6 sm:items-center">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-navy">
-              <Icon name="clock" className="h-5 w-5" />
-            </span>
-            <p className="text-[0.9375rem] leading-relaxed text-navy">
-              <span className="font-semibold">Certification roadmap:</span> ISO 27001
-              and SOC 2 certifications are in progress. We state credentials only
-              once they are obtained. No overclaiming, on this page or anywhere
-              else.
-            </p>
-          </div>
-        </Reveal>
       </Section>
 
       <CtaBand

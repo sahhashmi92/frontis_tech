@@ -79,6 +79,17 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-muted">
               <li>
                 <span className="block text-[0.8125rem] font-semibold text-navy">
+                  Phone
+                </span>
+                <a
+                  href={`tel:${site.phoneE164}`}
+                  className="font-medium text-navy-500 transition-colors hover:text-navy"
+                >
+                  {site.phone}
+                </a>
+              </li>
+              <li>
+                <span className="block text-[0.8125rem] font-semibold text-navy">
                   Partnerships
                 </span>
                 <a
@@ -99,7 +110,18 @@ export default function Footer() {
                   {site.emailGeneral}
                 </a>
               </li>
-              <li>We respond to all inquiries within one US business day.</li>
+              <li>
+                <span className="block text-[0.8125rem] font-semibold text-navy">
+                  Office
+                </span>
+                <address className="not-italic">
+                  {site.address.lines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </address>
+              </li>
             </ul>
           </div>
         </div>

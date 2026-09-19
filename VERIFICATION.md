@@ -18,7 +18,7 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 | NOT positioned as call center / BPO | ✅ | Grep-verified: zero occurrences of "BPO", "call center" |
 | Full-service operations & technology partner on every page | ✅ | Hero, footer blurb, About, service pages |
 | No jargon/buzzwords ("synergy", "cutting-edge", "passionate") | ✅ | Grep-verified: zero occurrences |
-| No mention of Pakistan / offshore | ✅ | Grep-verified: zero occurrences; "global delivery" framed as advantage |
+| No mention of Pakistan / offshore | ✅ | Grep-verified: zero occurrences; no "US-based" / "global" location framing, copy speaks to client outcomes |
 
 ## 2. Sitemap & navigation
 
@@ -42,7 +42,7 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 
 ### About
 - ✅ Our Story: 3 short paragraphs, problem→solution, not a memoir
-- ✅ How We Work: US client management + global operations framed as advantage, no apologies
+- ✅ How We Work: dedicated account manager, coverage beyond 9-to-5, quality control; no location framing
 - ➖ Leadership section removed from About at client request
 - ✅ Values: Transparency, Compliance, Accountability, Partnership (numbered editorial list)
 - ✅ CTA: "See how we work, or just reach out"
@@ -87,13 +87,13 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 - ✅ Intro: "Compliance is not a feature. It is how we operate"
 - ✅ TCPA: DNC scrubbing explained (what + why), consent verification, recording & retention, agent training incl. CMS-aware scripting — confident and specific
 - ✅ Data security: handling & access controls, confidentiality, secure systems & restricted access
-- ✅ ISO 27001 / SOC 2 stated only as **in progress** — no overclaimed certifications anywhere
+- ✅ Certification roadmap removed from Compliance at client request — no certification claims anywhere
 
 ### Contact
 - ✅ Intro: "Tell us what you need" + one-business-day line, no long paragraphs
 - ✅ Form fields: Full Name, Company, Email, Phone (optional), Service dropdown (5 services + "Not sure / General inquiry"), Message
 - ✅ Response commitment below form
-- 📋 US phone number (Florida area code): pending client
+- ✅ Phone (727) 590-2190 shown on home hero, contact page, and footer
 - 📋 Mailing address: pending virtual office
 - ✅ Business emails partnership@frontistech.com and info@frontistech.com shown
 
@@ -124,6 +124,6 @@ built site. Status: ✅ implemented and verified · 📋 needs client input · �
 ## 5. Open items for the client
 
 1. **Florida vs Texas**: resolved — client confirmed Florida; footer reads "Registered in Florida, USA".
-2. Phone number and mailing address (Managing Director name and photo added 2026-08-08).
+2. Phone number and mailing address: resolved — both on the site.
 3. Formspree form ID + auto-reply.
 4. Deploy to Vercel, DNS via Cloudflare, Search Console verification + sitemap submission on launch day.

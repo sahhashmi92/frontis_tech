@@ -24,7 +24,7 @@ export default function ContactForm() {
     if (!site.formEndpoint) {
       setStatus("error");
       setErrorMsg(
-        `The contact form isn’t connected yet. Please email us directly at ${site.emailGeneral}. We respond within one US business day.`,
+        `The contact form isn’t connected yet. Please email us directly at ${site.emailGeneral}.`,
       );
       return;
     }
@@ -186,9 +186,6 @@ export default function ContactForm() {
         {status === "submitting" ? "Sending…" : "Send message"}
         {status !== "submitting" && <Icon name="arrowRight" className="h-4 w-4" />}
       </button>
-      <p className="mt-4 text-sm text-muted">
-        We respond to all inquiries within one US business day.
-      </p>
     </form>
   );
 }

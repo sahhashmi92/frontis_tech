@@ -9,7 +9,7 @@ import { Icon, type IconName } from "@/components/icons";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Frontis Tech LLC is a full-service operations and technology partner with US-based leadership and global delivery across calling, back-office, staffing, marketing, and software.",
+    "Frontis Tech LLC is a Florida-based operations and technology partner for US businesses, covering calling, back-office, staffing, marketing, software, AI, and cloud.",
 };
 
 const values: { title: string; body: string }[] = [
@@ -33,14 +33,14 @@ const values: { title: string; body: string }[] = [
 
 const deliveryPoints: { icon: IconName; title: string; body: string }[] = [
   {
-    icon: "mapPin",
-    title: "US-based client management",
-    body: "Your contract, account management, and escalation path are American, with clear communication in your time zone.",
+    icon: "userCheck",
+    title: "A dedicated account manager",
+    body: "One named contact who knows your business, owns your results, and communicates in your time zone.",
   },
   {
-    icon: "globe",
-    title: "Global operations team",
-    body: "Day-to-day execution runs on a global delivery team, keeping work moving around the clock at a cost structure that makes sense.",
+    icon: "clock",
+    title: "Coverage beyond 9-to-5",
+    body: "Work keeps moving after hours and on weekends, so leads get answered and tasks get done while you’re off the clock, at a cost that makes sense.",
   },
   {
     icon: "clipboardCheck",
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="How we work"
             title={<span id="how-we-work">A delivery model built on purpose</span>}
-            lede="This model isn’t a compromise; it’s the advantage. Cost-efficient, always available, and quality-controlled at every step."
+            lede="Cost-efficient, always available, and quality-controlled at every step."
           />
         </Reveal>
         <ul className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -141,7 +141,7 @@ export default function AboutPage() {
 
       <CtaBand
         heading="See how we work, or just reach out"
-        copy="Browse the eight service lines, or skip straight to a conversation about what you need."
+        copy="Browse our services, or skip straight to a conversation about what you need."
         ctaLabel="Talk to Us"
         secondaryLabel="Our Services"
         secondaryHref="/services"

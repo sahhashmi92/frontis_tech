@@ -13,19 +13,19 @@ export const metadata: Metadata = {
     absolute: "Frontis Tech | Operations & Technology Partner | Connections That Convert",
   },
   description:
-    "Customer acquisition, back-office support, talent, marketing, software, AI, apps, and cloud: eight service lines, one accountable US partner.",
+    "Customer acquisition, back-office support, talent, marketing, software, AI, apps, and cloud: multiple services, one accountable US partner.",
 };
 
 const whyItems: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "network",
     title: "A full-service partner, not a single vendor",
-    body: "Eight service lines under one roof mean fewer hand-offs, fewer contracts, and one team accountable for outcomes.",
+    body: "Multiple services under one roof mean fewer hand-offs, fewer contracts, and one team accountable for outcomes.",
   },
   {
-    icon: "globe",
-    title: "US-based leadership, global delivery",
-    body: "Client management and contracting stay in the US, while a global operations team keeps work moving around the clock.",
+    icon: "clock",
+    title: "One accountable team, around the clock",
+    body: "A dedicated point of contact who knows your account, backed by a delivery team that keeps work moving on your schedule, day or night.",
   },
   {
     icon: "shieldCheck",
@@ -128,6 +128,15 @@ export default function HomePage() {
             url: site.url,
             logo: `${site.url}/brand/logo-stacked.png`,
             email: site.emailGeneral,
+            telephone: site.phoneE164,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: site.address.street,
+              addressLocality: site.address.city,
+              addressRegion: site.address.region,
+              postalCode: site.address.postalCode,
+              addressCountry: site.address.country,
+            },
             slogan: site.tagline,
             areaServed: "US",
           }),
@@ -152,7 +161,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
               Customer acquisition, back-office support, talent, marketing,
-              software, AI, and cloud. Eight service lines, one accountable team.
+              software, AI, and cloud. Multiple services, one accountable team.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Button href="/contact" size="lg" withArrow>
@@ -175,7 +184,7 @@ export default function HomePage() {
         <Reveal>
           <SectionHeading
             eyebrow="What we do"
-            title={<span id="services-heading">Eight service lines. One partner.</span>}
+            title={<span id="services-heading">Multiple services. One partner.</span>}
             lede="Start with the service you need today and add the rest as you grow."
           />
         </Reveal>
